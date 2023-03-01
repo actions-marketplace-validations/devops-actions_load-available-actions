@@ -18,7 +18,7 @@ jobs:
           user: rajbos
         id: load-actions
 
-      - uses: devops-actions/json-to-file@v1.0.0
+      - uses: devops-actions/json-to-file@v1.0.2
         with: 
           json: ${{ steps.load-actions.outputs.actions }}
           filename: actions.json
